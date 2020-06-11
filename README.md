@@ -75,7 +75,7 @@ Use dd to flash it on the sdcard (unmount all partitions before):
 
 To create a sdcard with root partition extended to all the device, use this script:
 
-`sudo ./flash-sdcard.sh -d /dev/???`
+`sudo ./flash-sdcard.sh -m orange-pi-pc -i opipc-minimal -d /dev/???`
 
 ## Boot
 The ethernet network interface is configured as a dhcp client. A sshd is running. Use root for login, no password.
