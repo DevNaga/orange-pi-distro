@@ -73,6 +73,13 @@ Use dd to flash it on the sdcard (unmount all partitions before):
 
 `dd if=build/tmp-glibc/deploy/images/<machine>/<image>-<machine>.sunxi-sdimg of=/dev/??? bs=1M`
 
+For crypto libraries, add following into build/conf/bblayers.conf.
+
+```bash
+BBLAYERS =
+  /home/devnaga/orange-pi-distro/meta-openembedded/meta-networking/ \
+```
+
 To create a sdcard with root partition extended to all the device, use this script:
 
 `sudo ./flash-sdcard.sh -m orange-pi-pc -i opipc-minimal -d /dev/???`

@@ -17,3 +17,5 @@ IMAGE_INSTALL += " \
 "
 
 IMAGE_FEATURES += "package-management"
+
+IMAGE_INSTALL_append = "wolfssl mbedtls jsoncpp protobuf protobuf-c gtest"
